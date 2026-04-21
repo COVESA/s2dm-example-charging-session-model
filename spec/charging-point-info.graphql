@@ -1,4 +1,5 @@
 type ChargingPointInfo {
   id: ID!
   availableNow: Boolean!
+  connectors: [ConnectorInfo!]!
 }

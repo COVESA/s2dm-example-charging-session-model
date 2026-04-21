@@ -1,0 +1,5 @@
+type ChargingStation {
+  id: ID!
+  name: String!
+  chargingPoints: [ChargingPointInfo!]!
+}

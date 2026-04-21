@@ -1,0 +1,1 @@
+directive @reference(uri: String!) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT | SCALAR | ENUM_VALUE

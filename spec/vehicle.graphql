@@ -1,4 +1,5 @@
 type Vehicle {
   id: ID!
   vin: String!
+  connectorTypes: [ConnectorType!]!
 }

@@ -1,0 +1,2 @@
+"""A GeoJSON object as defined by RFC 7946."""
+scalar GeoJSON @specifiedBy(url: "https://the-guild.dev/graphql/scalars/docs/scalars/geo-json")
