@@ -1,0 +1,8 @@
+"""
+This type is deprecated and will be removed in a future version. 
+Use the scalar 'GeoJSON' with the directive @geoPoint instead.
+"""
+type GeoPoint {
+  lat: Float! @deprecated(reason: "Use the scalar 'GeoJSON' with the directive @geoPoint instead.")
+  lng: Float! @deprecated(reason: "Use the scalar 'GeoJSON' with the directive @geoPoint instead.")
+}

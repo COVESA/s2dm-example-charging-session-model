@@ -1,1 +1,12 @@
 directive @reference(uri: String!) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT | SCALAR | ENUM_VALUE
+
+directive @geoPoint(shape: GeoPointShape!) on FIELD_DEFINITION
+
+enum GeoPointShape {
+    POINT
+    MULTIPOINT
+    LINESTRING
+    MULTILINESTRING
+    POLYGON
+    MULTIPOLYGON
+}
