@@ -1,5 +1,6 @@
 type ChargingSession {
   id: ID!
-  vehicle: Vehicle!
-  chargingPoint: ChargingPoint!
+  vehicleId: ID!
+  chargingPointId: ID!
+  status: SessionStatus!
 }

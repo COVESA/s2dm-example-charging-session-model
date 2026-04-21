@@ -1,4 +1,4 @@
-type ChargingPoint {
+type ChargingPointInfo {
   id: ID!
-  provider: String
+  availableNow: Boolean!
 }
