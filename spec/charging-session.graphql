@@ -1,0 +1,5 @@
+type ChargingSession {
+  id: ID!
+  vehicle: Vehicle!
+  chargingPoint: ChargingPoint!
+}

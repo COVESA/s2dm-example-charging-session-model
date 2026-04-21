@@ -1,0 +1,4 @@
+type ChargingPoint {
+  id: ID!
+  provider: String
+}
