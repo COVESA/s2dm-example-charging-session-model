@@ -1,5 +1,3 @@
-directive @reference(uri: String!) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT | SCALAR | ENUM_VALUE
-
 directive @geoPoint(shape: GeoPointShape!) on FIELD_DEFINITION
 
 enum GeoPointShape {
@@ -10,3 +8,7 @@ enum GeoPointShape {
     POLYGON
     MULTIPOLYGON
 }
+
+directive @reference(uri: String!) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT | SCALAR | ENUM_VALUE
+
+directive @range(min: Float, max: Float) on FIELD_DEFINITION

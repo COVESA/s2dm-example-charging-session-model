@@ -2,9 +2,9 @@ type ChargingDetails {
   startedAt: String
   endedAt: String
   connectorUsed: SessionConnectorUsed
-  meterStartKwh: Float
-  meterStopKwh: Float
-  energyDeliveredKwh: Float
-  socStartPercent: Float
-  socStopPercent: Float
+  meterStartKwh(unit: EnergyUnit = KILOW_HR): Float
+  meterStopKwh(unit: EnergyUnit = KILOW_HR): Float
+  energyDeliveredKwh(unit: EnergyUnit = KILOW_HR): Float
+  socStartPercent(unit: DimensionlessRatioUnit = PERCENT): Float
+  socStopPercent(unit: DimensionlessRatioUnit = PERCENT): Float
 }

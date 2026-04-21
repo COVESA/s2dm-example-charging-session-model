@@ -3,8 +3,8 @@ type Vehicle {
   vin: String!
   make: String!
   model: String!
-  year: Int!
-  batteryCapacityKwh: Float!
-  maxChargePowerKw: Float!
+  year: Int! @range(min: 1886) # The year the first car was invented
+  batteryCapacityKwh(unit: EnergyUnit = KILOW_HR): Float!
+  maxChargePowerKw(unit: ElectricPowerUnit = KILOW): Float!
   connectorTypes: [ConnectorType!]!
 }
